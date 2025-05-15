@@ -13,7 +13,7 @@ export const VALID_TARGETS: Array<string> = [
   'android-automotive-playstore',
   'android-desktop',
 ];
-export const VALID_ARCHS: Array<string> = ['x86', 'x86_64', 'arm64-v8a'];
+export const VALID_ARCHS: Array<string> = ['x86', 'x86_64', 'arm64-v8a', 'armeabi-v7a'];
 export const VALID_CHANNELS: Array<string> = ['stable', 'beta', 'dev', 'canary'];
 export const MIN_PORT = 5554;
 export const MAX_PORT = 5584;

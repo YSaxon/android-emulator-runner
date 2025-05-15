@@ -206,7 +206,7 @@ jobs:
 |-|-|-|-|
 | `api-level` | Required | N/A | API level of the platform and system image - e.g. `23`, `33`, `35-ext15`, `Baklava`. **Minimum API level supported is 15**. |
 | `system-image-api-level` | Optional | same as `api-level` | API level of the system image - e.g. `34-ext10`, `35-ext15`. |
-| `target` | Optional | `default` | Target of the system image - `default`, `google_apis`, `playstore`, `android-wear`, `android-wear-cn`, `android-tv`, `google-tv`, `aosp_atd`, `google_atd`, `android-automotive`, `android-automotive-playstore` or `android-desktop`. Note that `aosp_atd` and `google_atd` currently require the following: `api-level: 30`, `arch: x86` or `arch: arm64-v8` and `channel: canary`. |
+| `target` | Optional | `default` | Target of the system image - `default`, `google_apis`, `playstore`, `android-wear`, `android-wear-cn`, `android-tv`, `google-tv`, `aosp_atd`, `google_atd`, `android-automotive`, `android-automotive-playstore` or `android-desktop`. Note that `aosp_atd` and `google_atd` currently require the following: `api-level: 30`, `arch: x86` or `arch: arm64-v8` or `arch: arm64-v8` or `arch: armeabi-v7a` and `channel: canary`. |
 | `arch` | Optional | `x86` | CPU architecture of the system image - `x86`, `x86_64` or `arm64-v8a`. Note that `x86_64` image is only available for API 21+. `arm64-v8a` images require Android 4.2+ and are limited to fewer API levels (e.g. 30). |
 | `profile` | Optional | N/A | Hardware profile used for creating the AVD - e.g. `Nexus 6`. For a list of all profiles available, run `avdmanager list device`. |
 | `cores` | Optional | 2 | Number of cores to use for the emulator (`hw.cpu.ncore` in config.ini). |
